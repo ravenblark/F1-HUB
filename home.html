@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&family=Michroma&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="home.js" defer></script>
+    <script src="ticker.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Nav Bar -->
+    <div class="sticky-header-container">
+      <header>
+        <nav class="navbar">
+          <div class="logo">
+            <div class="logo-group">
+              <img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/250px-F1.svg.png" alt="F1">
+              <a href="index.html">
+                <h1>F1<span>HUB</span></h1>
+              </a>
+            </div>
+          </div>
+
+          <div id="mobile-menu" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
+          <ul class="nav-links">
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="drivers.html">Drivers</a></li>
+            <li><a href="circuits.html">Circuits</a></li>
+            <li><a href="about.html">About Me</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Time Bar -->
+      <div class="race-ticker">
+        <div class="ticker-left">
+          <div class="race-info">
+            <span class="round-num">Loading...</span>
+            <div class="race-location">
+              <img src alt="Flag">
+              <span class="f1-wide-font ticker-country">---</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ticker-right">
+          <div class="tag-heuer-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/TAG_Heuer_Logo.svg/500px-TAG_Heuer_Logo.svg.png" alt="TAG Heuer">
+          </div>
+
+          <div class="time-display">
+            <div class="time-item active">
+              <span class="time-label">● MY TIME</span>
+              <span id="local-clock" class="time-value">00:00</span>
+            </div>
+            <div class="time-item">
+              <span class="time-label">TRACK TIME</span>
+              <span id="track-clock" class="time-value">00:00</span>
+            </div>
+          </div>
+
+          <div class="watch-icon">
+            <img src="clock.png" alt="Watch">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Highlights Section -->
+    <section class="highlights-container">
+      <div class="highlights-header">
+        <h2 class="f1-wide-font">2026 HIGHLIGHTS</h2>
+        <div class="carousel-controls">
+          <a class="view-all" href="https://www.youtube.com/@Formula1" target="_blank">View All</a>
+          <div class="nav-arrows">
+            <button id="prevBtn">❮</button>
+            <button id="nextBtn">❯</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Videos -->
+      <div id="highlightsTrack" class="highlights-track">
+        <a class="video-link" href="https://www.youtube.com/watch?v=5gYys4GL7S0" target="_blank">
+          <div class="video-card">
+            <div class="thumb-wrapper">
+              <img src="https://img.youtube.com/vi/5gYys4GL7S0/maxresdefault.jpg" alt="Race Highlights">
+              <span class="video-time">12:25</span>
+              <div class="play-btn"></div>
+            </div>
+            <p>Race Highlights | 2026 Miami Grand Prix</p>
+          </div>
+        </a>
+
+        <a class="video-link" href="https://www.youtube.com/watch?v=83GJM1S0FnE" target="_blank">
+          <div class="video-card">
+            <div class="thumb-wrapper">
+              <img src="https://img.youtube.com/vi/83GJM1S0FnE/maxresdefault.jpg" alt="Qualifying Highlights">
+              <span class="video-time">8:49</span>
+              <div class="play-btn"></div>
+            </div>
+            <p>Qualifying Highlights | 2026 Miami Grand Prix</p>
+          </div>
+        </a>
+
+        <a class="video-link" href="https://www.youtube.com/watch?v=0XlphgCNbwQ" target="_blank">
+          <div class="video-card">
+            <div class="thumb-wrapper">
+              <img src="https://img.youtube.com/vi/0XlphgCNbwQ/maxresdefault.jpg" alt="Sprint Highlights">
+              <span class="video-time">10:33</span>
+              <div class="play-btn"></div>
+            </div>
+            <p>Sprint Highlights | 2026 Miami Grand Prix</p>
+          </div>
+        </a>
+
+        <a class="video-link" href="https://www.youtube.com/watch?v=zV_UPEsZl-s" target="_blank">
+          <div class="video-card">
+            <div class="thumb-wrapper">
+              <img src="https://img.youtube.com/vi/zV_UPEsZl-s/maxresdefault.jpg" alt="F2 Highlights">
+              <span class="video-time">8:01</span>
+              <div class="play-btn"></div>
+            </div>
+            <p>Sprint Qualifying Highlights | 2026 Miami Grand Prix</p>
+          </div>
+        </a>
+
+        <a class="video-link" href="https://www.youtube.com/watch?v=1mrLb_uRO9s" target="_blank">
+          <div class="video-card">
+            <div class="thumb-wrapper">
+              <img src="https://img.youtube.com/vi/1mrLb_uRO9s/maxresdefault.jpg" alt="F2 Highlights">
+              <span class="video-time">4:54</span>
+              <div class="play-btn"></div>
+            </div>
+            <p>FP1 Highlights | 2026 Miami Grand Prix</p>
+          </div>
+        </a>
+        <a class="video-link" href="https://www.youtube.com/watch?v=oAtYfF0_4-I" target="_blank">
+          <div class="video-card">
+            <div class="thumb-wrapper">
+              <img src="https://img.youtube.com/vi/oAtYfF0_4-I/maxresdefault.jpg" alt="F2 Highlights">
+              <span class="video-time">8:09</span>
+              <div class="play-btn"></div>
+            </div>
+            <p>Race Highlights | 2026 Japanese Grand Prix</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Drivers Standings Section -->
+    <section class="standings-container">
+      <div class="standings-header">
+        <h2 class="f1-wide-font">DRIVER STANDINGS</h2>
+        <span id="standingsBadge" class="standings-badge"></span>
+      </div>
+
+      <div id="standingsLoading" class="standings-loading">
+        <div class="standings-spinner"></div>
+        <p>Loading standings…</p>
+      </div>
+
+      <div id="standingsError" class="standings-error">
+        <p>⚠ Failed to load standings</p>
+        <button onclick="fetchStandings()">Retry</button>
+      </div>
+
+      <!-- (filled by JS) -->
+      <div id="podiumRow" class="podium-row"></div>
+
+      <table id="standingsTable" class="f1-table">
+        <thead>
+          <tr>
+            <th>POS</th>
+            <th>DRIVER</th>
+            <th class="hide-mobile">NATIONALITY</th>
+            <th>TEAM</th>
+            <th class="hide-small">WINS</th>
+            <th>PTS</th>
+          </tr>
+        </thead>
+        <tbody id="standingsBody"></tbody>
+      </table>
+
+      <div class="show-all-btn">
+        <button id="toggleStandings" onclick="toggleShowAll()">
+          ▼ Show All Drivers
+        </button>
+      </div>
+    </section>
+
+    <!-- Constructors Standings Section -->
+    <section class="standings-container constructors-section">
+      <div class="standings-header">
+        <h2 class="f1-wide-font">CONSTRUCTOR STANDINGS</h2>
+        <span id="constructorsBadge" class="standings-badge"></span>
+      </div>
+
+      <div id="constructorsLoading" class="standings-loading">
+        <div class="standings-spinner"></div>
+        <p>Loading standings…</p>
+      </div>
+
+      <div id="constructorsError" class="standings-error">
+        <p>⚠ Failed to load standings</p>
+        <button onclick="fetchConstructors()">Retry</button>
+      </div>
+
+      <!-- (filled by JS) -->
+      <div id="constructorCards" class="constructor-cards"></div>
+
+      <p id="constructorsFooter" class="standings-footer">
+        Powered by Jolpica F1 API
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img class="credits-logo" src="logo.png" alt="F1">
+          <img class="credits-logo2" src="f1logo.png" alt="F1">
+          <h2 class="f1-wide-font">F1<span>HUB</span></h2>
+          <p class="tagline">The ultimate 2026 season dashboard.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="drivers.html">Drivers</a></li>
+            <li><a href="circuits.html">Circuits</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-credit">
+          <h3>Created By</h3>
+          <p class="my-name">RavenBlark</p>
+          <p class="copyright">&copy; 2026 F1HUB Project</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

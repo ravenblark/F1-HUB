@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Circuits</title>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&family=Michroma&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="circuits.js" defer></script>
+        <script src="ticker.js" defer></script>
+    </head>
+
+    <body>
+        <!-- Nav Bar -->
+        <div class="sticky-header-container">
+            <header>
+                <nav class="navbar">
+                    <div class="logo">
+                        <div class="logo-group">
+                            <img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/250px-F1.svg.png" alt="F1">
+                            <a href="index.html"><h1>F1<span>HUB</span></h1></a>
+                        </div>
+                    </div>
+
+                    <div id="mobile-menu" class="menu-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <ul class="nav-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="drivers.html">Drivers</a></li>
+                        <li><a class="active" href="circuits.html">Circuits</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Time Bar -->
+            <div class="race-ticker">
+                <div class="ticker-left">
+                    <div class="race-info">
+                        <span class="round-num">Loading...</span>
+                        <div class="race-location">
+                            <img src alt="Flag">
+                            <span class="f1-wide-font ticker-country">---</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ticker-right">
+                    <div class="tag-heuer-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/TAG_Heuer_Logo.svg/500px-TAG_Heuer_Logo.svg.png" alt="TAG Heuer">
+                    </div>
+
+                    <div class="time-display">
+                        <div class="time-item active">
+                            <span class="time-label">● MY TIME</span>
+                            <span id="local-clock" class="time-value">00:00</span>
+                        </div>
+                        <div class="time-item">
+                            <span class="time-label">TRACK TIME</span>
+                            <span id="track-clock" class="time-value">00:00</span>
+                        </div>
+                    </div>
+
+                    <div class="watch-icon">
+                        <img src="clock.png" alt="Watch">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Circuits Section -->
+        <main class="circuits-section">
+            <div class="circuits-title-bar">
+                <h2 class="f1-wide-font circuits-heading">2026 Race
+                    Calendar</h2>
+                <p class="circuits-subtitle">The complete FIA Formula One World
+                    Championship™ schedule</p>
+            </div>
+            <div id="circuits-list" class="circuits-list">
+                <!-- Circuits are injected by circuits.js -->
+            </div>
+        </main>
+
+        <!-- Circuit Explorer Section -->
+        <section class="circuits-section" style="border-top: 1px solid #222;">
+            <div class="circuits-title-bar">
+                <h2 class="f1-wide-font circuits-heading">Circuit Explorer</h2>
+                <p class="circuits-subtitle">Track maps with corner details and
+                    overtake zones</p>
+            </div>
+
+            <div class="circuit-explorer">
+                <!-- Circuit Selector -->
+                <div class="circuit-selector">
+                    <h3 class="selector-title">Select Circuit</h3>
+                    <div id="circuit-thumbs" class="circuit-thumbs">
+                        <!-- Injected by JS -->
+                    </div>
+                </div>
+
+                <div class="explorer-main">
+                    <!-- Interactive Map -->
+                    <div class="interactive-map-container">
+                        <div class="map-header">
+                            <div class="map-title-row">
+                                <img id="map-flag" class="map-flag" src alt>
+                                <div>
+                                    <h3 id="map-circuit-name" class="map-circuit-name"></h3>
+                                    <p id="map-circuit-location" class="map-circuit-location"></p>
+                                </div>
+                            </div>
+                            <div class="map-stats">
+                                <div class="map-stat">
+                                    <span class="map-stat-label">Length</span>
+                                    <span id="map-length" class="map-stat-value"></span>
+                                </div>
+                                <div class="map-stat">
+                                    <span class="map-stat-label">Laps</span>
+                                    <span id="map-laps" class="map-stat-value"></span>
+                                </div>
+                                <div class="map-stat">
+                                    <span class="map-stat-label">Corners</span>
+                                    <span id="map-corners" class="map-stat-value"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="interactive-map" class="interactive-map">
+                            <img id="track-svg-bg" class="track-svg-bg track-svg-large" src alt>
+                        </div>
+
+                        <!-- Legend -->
+                        <div class="map-legend">
+                            <div class="legend-section">
+                                <span class="legend-title">Sectors</span>
+                                <div id="legend-sectors" class="legend-items">
+                                    <!-- Injected by JS -->
+                                </div>
+                            </div>
+                            <div class="legend-section">
+                                <span class="legend-title">Overtake Zones</span>
+                                <div id="legend-overtake" class="legend-items">
+                                    <!-- Injected by JS -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Corner List Panel -->
+                    <div class="corner-list-panel">
+                        <h3 class="panel-title">All Corners</h3>
+                        <div id="corner-list" class="corner-list">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img class="credits-logo" src="logo.png" alt="F1">
+                    <img class="credits-logo2" src="f1logo.png" alt="F1">
+                    <h2 class="f1-wide-font">F1<span>HUB</span></h2>
+                    <p class="tagline">The ultimate 2026 season dashboard.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="drivers.html">Drivers</a></li>
+                        <li><a href="circuits.html">Circuits</a></li>
+                    </ul>
+                </div>
+                <div class="footer-credit">
+                    <h3>Created By</h3>
+                    <p class="my-name">RavenBlark</p>
+                    <p class="copyright">&copy; 2026 F1HUB Project</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

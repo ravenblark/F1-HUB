@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&family=Michroma&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <script src="ticker.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Nav Bar -->
+    <div class="sticky-header-container">
+      <header>
+        <nav class="navbar">
+          <div class="logo">
+            <div class="logo-group">
+              <img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/250px-F1.svg.png" alt="F1">
+              <a href="index.html">
+                <h1>F1<span>HUB</span></h1>
+              </a>
+            </div>
+          </div>
+
+          <div id="mobile-menu" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="drivers.html">Drivers</a></li>
+            <li><a href="circuits.html">Circuits</a></li>
+            <li><a class="active" href="about.html">About Me</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Time Bar -->
+      <div class="race-ticker">
+        <div class="ticker-left">
+          <div class="race-info">
+            <span class="round-num">Loading...</span>
+            <div class="race-location">
+              <img src alt="Flag">
+              <span class="f1-wide-font ticker-country">---</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ticker-right">
+          <div class="tag-heuer-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/TAG_Heuer_Logo.svg/500px-TAG_Heuer_Logo.svg.png" alt="TAG Heuer">
+          </div>
+
+          <div class="time-display">
+            <div class="time-item active">
+              <span class="time-label">● MY TIME</span>
+              <span id="local-clock" class="time-value">00:00</span>
+            </div>
+            <div class="time-item">
+              <span class="time-label">TRACK TIME</span>
+              <span id="track-clock" class="time-value">00:00</span>
+            </div>
+          </div>
+
+          <div class="watch-icon">
+            <img src="clock.png" alt="Watch">
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- About Section -->
+<main class="about-section">
+  <!-- Hero Banner -->
+  <div class="about-hero">
+    <div class="about-hero-content">
+        <div class="about-avatar">
+            <img class="about-avatar-img" src="raena.jpg" alt="RavenBlark">
+        </div>
+      <h1 class="f1-wide-font about-title">RavenBlark</h1>
+      <p class="about-tagline">Creator of F1HUB — The Ultimate 2026 Season Dashboard</p>
+      <div class="about-badges">
+        <span class="about-badge">🏎️ F1 Fan</span>
+        <span class="about-badge">💻 Web Developer</span>
+        <span class="about-badge">🏁 2026 Season</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Content -->
+  <div class="about-content">
+    <!-- About Card -->
+    <div class="about-card">
+      <div class="about-card-accent"></div>
+      <h2 class="about-card-title">About This Project</h2>
+      <p class="about-card-text">
+        Hi, I'm Raena. I'm a developer and student with a deep passion for Formula 1. 
+        I wanted to combine my technical skills with my love for the sport to create something special for the F1 community.
+      </p>
+      <p class="about-card-text">
+        F1HUB was built out of pure passion for Formula 1. As a dedicated fan of the sport,
+        I wanted to create a place where everything about the 2026 season lives in one beautiful,
+        easy-to-use dashboard — from team lineups and driver stats to circuit breakdowns and race results.
+      </p>
+      <p class="about-card-text">
+        Every detail on this site is carefully researched and designed to give fans the best
+        experience possible. Whether you're a hardcore F1 nerd or just getting into the sport,
+        F1HUB has something for you.
+      </p>
+      <p class="about-card-text">Thank you for being here. Buckle up, it's going to be an exciting season!</p>
+    </div>
+
+    <!-- Stats Row -->
+    <div class="about-stats">
+      <div class="about-stat-card">
+        <span class="about-stat-number">11</span>
+        <span class="about-stat-label">Teams Tracked</span>
+      </div>
+      <div class="about-stat-card">
+        <span class="about-stat-number">22</span>
+        <span class="about-stat-label">Drivers Listed</span>
+      </div>
+      <div class="about-stat-card">
+        <span class="about-stat-number">22</span>
+        <span class="about-stat-label">Circuits Mapped</span>
+      </div>
+      <div class="about-stat-card">
+        <span class="about-stat-number">1</span>
+        <span class="about-stat-label">Passionate Dev</span>
+      </div>
+    </div>
+
+    <!-- Built With -->
+    <div class="about-card">
+      <div class="about-card-accent"></div>
+      <h2 class="about-card-title">Built With</h2>
+      <div class="about-tech-grid">
+        <div class="about-tech-item">
+          <span class="about-tech-icon">🌐</span>
+          <span class="about-tech-name">HTML5</span>
+        </div>
+        <div class="about-tech-item">
+          <span class="about-tech-icon">🎨</span>
+          <span class="about-tech-name">CSS3</span>
+        </div>
+        <div class="about-tech-item">
+          <span class="about-tech-icon">⚡</span>
+          <span class="about-tech-name">JavaScript</span>
+        </div>
+        <div class="about-tech-item">
+          <span class="about-tech-icon">📊</span>
+          <span class="about-tech-name">Formula 1 API</span>
+        </div>
+        <div class="about-tech-item">
+          <span class="about-tech-icon">🗺️</span>
+          <span class="about-tech-name">Circuit SVGs</span>
+        </div>
+        <div class="about-tech-item">
+          <span class="about-tech-icon">🏁</span>
+          <span class="about-tech-name">F1 Media CDN</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="about-card">
+      <div class="about-card-accent"></div>
+      <h2 class="about-card-title">Features</h2>
+      <div class="about-features">
+        <div class="about-feature">
+          <span class="about-feature-dot"></span>
+          <div>
+            <span class="about-feature-title">Live Race Ticker</span>
+            <span class="about-feature-desc">Auto-updating race info with local & track time</span>
+          </div>
+        </div>
+        <div class="about-feature">
+          <span class="about-feature-dot"></span>
+          <div>
+            <span class="about-feature-title">Complete Team Profiles</span>
+            <span class="about-feature-desc">All 11 teams with drivers, stats & car images</span>
+          </div>
+        </div>
+        <div class="about-feature">
+          <span class="about-feature-dot"></span>
+          <div>
+            <span class="about-feature-title">Driver Database</span>
+            <span class="about-feature-desc">22 drivers with detailed career information</span>
+          </div>
+        </div>
+        <div class="about-feature">
+          <span class="about-feature-dot"></span>
+          <div>
+            <span class="about-feature-title">Circuit Explorer</span>
+            <span class="about-feature-desc">Interactive maps with corner data & overtake zones</span>
+          </div>
+        </div>
+        <div class="about-feature">
+          <span class="about-feature-dot"></span>
+          <div>
+            <span class="about-feature-title">Full Race Calendar</span>
+            <span class="about-feature-desc">22 races with results, lap records & circuit details</span>
+          </div>
+        </div>
+        <div class="about-feature">
+          <span class="about-feature-dot"></span>
+          <div>
+            <span class="about-feature-title">Fully Responsive</span>
+            <span class="about-feature-desc">Looks perfect on desktop, tablet & mobile</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Connect -->
+<div class="about-card">
+    <div class="about-card-accent"></div>
+    <h2 class="about-card-title">Connect With Me</h2>
+    <div class="about-socials">
+        <a class="about-social-link" href="mailto:nanazhaleh728@email.com" target="_blank">
+            <div class="about-social-icon" style="background: rgba(234, 67, 53, 0.12); border-color: rgba(234, 67, 53, 0.3);">
+                <span>✉️</span>
+            </div>
+            <div class="about-social-info">
+                <span class="about-social-name">Email</span>
+                <span class="about-social-handle">nanazhaleh728@email.com</span>
+            </div>
+        </a>
+        <a class="about-social-link" href="https://instagram.com/n.nargss.zh" target="_blank">
+            <div class="about-social-icon" style="background: rgba(225, 48, 108, 0.12); border-color: rgba(225, 48, 108, 0.3);">
+                <span>📸</span>
+            </div>
+            <div class="about-social-info">
+                <span class="about-social-name">Instagram</span>
+                <span class="about-social-handle">@n.nargss.zh</span>
+            </div>
+        </a>
+        <a class="about-social-link" href="https://github.com/ravenblark " target="_blank">
+            <div class="about-social-icon" style="background: rgba(255, 255, 255, 0.06); border-color: rgba(255, 255, 255, 0.15);">
+                <span>💻</span>
+            </div>
+            <div class="about-social-info">
+                <span class="about-social-name">GitHub</span>
+                <span class="about-social-handle">@ravenblark</span>
+            </div>
+        </a>
+        <a class="about-social-link" href="https://open.spotify.com/user/ravenblark" target="_blank">
+            <div class="about-social-icon" style="background: rgba(30, 215, 96, 0.12); border-color: rgba(30, 215, 96, 0.3);">
+                <span>🎵</span>
+            </div>
+            <div class="about-social-info">
+                <span class="about-social-name">Spotify</span>
+                <span class="about-social-handle">@ravenblark</span>
+            </div>
+        </a>
+    </div>
+</div>
+
+    <!-- Disclaimer -->
+    <div class="about-disclaimer">
+      <p>This is a fan-made project and is not affiliated with Formula 1, FIA, or any F1 team. All logos, images, and trademarks belong to their respective owners. Data sourced from formula1.com.</p>
+    </div>
+  </div>
+</main>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img class="credits-logo" src="logo.png" alt="F1">
+          <img class="credits-logo2" src="f1logo.png" alt="F1">
+          <h2 class="f1-wide-font">F1<span>HUB</span></h2>
+          <p class="tagline">The ultimate 2026 season dashboard.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="drivers.html">Drivers</a></li>
+            <li><a href="circuits.html">Circuits</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-credit">
+          <h3>Created By</h3>
+          <p class="my-name">RavenBlark</p>
+          <p class="copyright">&copy; 2026 F1HUB Project</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

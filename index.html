@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>F1 Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&family=Michroma&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <script src="ticker.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Nav Bar -->
+    <div class="sticky-header-container">
+      <header>
+        <nav class="navbar">
+          <div class="logo">
+            <div class="logo-group">
+              <img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/250px-F1.svg.png" alt="F1">
+              <a href="index.html">
+                <h1>F1<span>HUB</span></h1>
+              </a>
+            </div>
+          </div>
+
+          <div id="mobile-menu" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="drivers.html">Drivers</a></li>
+            <li><a href="circuits.html">Circuits</a></li>
+            <li><a href="about.html">About Me</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Time Bar -->
+      <div class="race-ticker">
+        <div class="ticker-left">
+          <div class="race-info">
+            <span class="round-num">Loading...</span>
+            <div class="race-location">
+              <img src alt="Flag">
+              <span class="f1-wide-font ticker-country">---</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ticker-right">
+          <div class="tag-heuer-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/TAG_Heuer_Logo.svg/500px-TAG_Heuer_Logo.svg.png" alt="TAG Heuer">
+          </div>
+
+          <div class="time-display">
+            <div class="time-item active">
+              <span class="time-label">● MY TIME</span>
+              <span id="local-clock" class="time-value">00:00</span>
+            </div>
+            <div class="time-item">
+              <span class="time-label">TRACK TIME</span>
+              <span id="track-clock" class="time-value">00:00</span>
+            </div>
+          </div>
+
+          <div class="watch-icon">
+            <img src="clock.png" alt="Watch">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to F1 Hub</h1>
+          <p>Your simple gateway to everything Formula One</p>
+          <div class="hero-btns">
+            <a class="btn-red" href="home.html">Start Exploring</a>
+            <a class="btn-outline" href="circuits.html" target="_blank">2026 Calendar</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
