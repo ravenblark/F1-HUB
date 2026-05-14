@@ -257,6 +257,8 @@ header {
   animation: slideFromTop 1s ease-out forwards;
   animation-delay: 0.6s;
   opacity: 0;
+  display: flex;
+  gap: 15px;
 }
 
 .hero-btns .btn-red {
@@ -290,6 +292,21 @@ header {
     0 0 8px rgba(186, 186, 186, 0.9),
     0 0 15px rgba(255, 255, 255, 0.6);
   transition: 0.4s;
+}
+
+/* Mobile Specific Fix */
+@media (max-width: 480px) {
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-btns .btn-red,
+  .hero-btns .btn-outline {
+    width: 80%;
+    text-align: center;
+    margin-right: 0;
+  }
 }
 
 /* ===== HERO ANIMATION ===== */
