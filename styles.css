@@ -1107,9 +1107,9 @@ header {
 .team-row-driver-img {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 100%;
   object-fit: cover;
-  object-position: 60% 10%;
+  object-position: 100% 0%;
   border: 2px solid;
   flex-shrink: 0;
   background: #2a2a2a;
