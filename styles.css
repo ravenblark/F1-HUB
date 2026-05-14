@@ -1821,15 +1821,12 @@ header {
 }
 
 .driver-card-image img {
-  height: 180px;
-  width: auto;
+  height: 250px;
+  width: 100%;
   object-fit: contain;
-  object-position: bottom right;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.driver-card:hover .driver-card-image img {
-  transform: scale(1.06);
+  object-position: top;
+  transform: scale(2) translate(6px, 34px);
+  transform-origin: top right;
 }
 
 /* ===== DRIVER CARD EXPANDED DETAILS ===== */
@@ -2273,6 +2270,7 @@ header {
 
   .driver-card-image img {
     height: 130px;
+    transform: scale(3.5) translate(3px, -2px);
   }
 
   .driver-card-number {
