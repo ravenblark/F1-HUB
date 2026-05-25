@@ -759,10 +759,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "S2", color: "#ffd700" },
         { name: "S3", color: "#2196F3" },
       ],
-      overtakeZones: [
-        { zone: 1, straight: "Main Straight", after: "T14" },
-        { zone: 2, straight: "Lakeside Drive", after: "T10" },
-      ],
+      overtakeZones: [{ zone: 1, straight: "Main Straight after T14" }],
       corners: [
         {
           num: 1,
@@ -770,7 +767,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "85 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 2,
@@ -841,7 +837,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "75 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 12,
@@ -881,10 +876,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "S2", color: "#ffd700" },
         { name: "S3", color: "#2196F3" },
       ],
-      overtakeZones: [
-        { zone: 1, straight: "Main Straight", after: "T16" },
-        { zone: 2, straight: "Back Straight", after: "T11" },
-      ],
+      overtakeZones: [{ zone: 1, straight: "Main Straight after T16" }],
       corners: [
         {
           num: 1,
@@ -892,7 +884,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Tightening Spiral",
           speed: "80 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 2,
@@ -950,7 +941,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Back Hairpin",
           speed: "70 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 11,
@@ -1004,10 +994,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "S2", color: "#ffd700" },
         { name: "S3", color: "#2196F3" },
       ],
-      overtakeZones: [
-        { zone: 1, straight: "Start/Finish Straight", after: "Casio Triangle" },
-        { zone: 2, straight: "Back Straight", after: "Spoon" },
-      ],
+      overtakeZones: [{ zone: 1, straight: "Start/Finish Straight after T16" }],
       corners: [
         {
           num: 1,
@@ -1015,7 +1002,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Fast Entry",
           speed: "215 km/h",
           gear: 6,
-          overtake: true,
         },
         {
           num: 2,
@@ -1086,7 +1072,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "62 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 12,
@@ -1122,7 +1107,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "85 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 17,
@@ -1155,10 +1139,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "S2", color: "#ffd700" },
         { name: "S3", color: "#2196F3" },
       ],
-      overtakeZones: [
-        { zone: 1, straight: "Main Straight", after: "T17" },
-        { zone: 2, straight: "Back Straight", after: "T7" },
-      ],
+      overtakeZones: [{ zone: 1, straight: "Main Straight after T17" }],
       corners: [
         {
           num: 1,
@@ -1166,7 +1147,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "80 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 2,
@@ -1231,7 +1211,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "75 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 12,
@@ -1286,16 +1265,14 @@ document.addEventListener("DOMContentLoaded", () => {
       laps: 70,
       firstGP: 1978,
       lapRecord: "1:13.078 (Bottas, 2019)",
-      trackSvg: tb + "montrealdetailed.webp",
+      trackSvg:
+        "https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000001/common/f1/2026/track/2026trackmontrealdetailed.webp?v=2026",
       sectors: [
         { name: "S1", color: "#e10600" },
         { name: "S2", color: "#ffd700" },
         { name: "S3", color: "#2196F3" },
       ],
-      overtakeZones: [
-        { zone: 1, straight: "Main Straight", after: "T13" },
-        { zone: 2, straight: "Back Straight", after: "T9" },
-      ],
+      overtakeZones: [{ zone: 1, straight: "Main Straight after T14" }],
       corners: [
         {
           num: 1,
@@ -1303,7 +1280,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "95 km/h",
           gear: 3,
-          overtake: true,
         },
         {
           num: 2,
@@ -1353,7 +1329,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "70 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 9,
@@ -1421,7 +1396,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "65 km/h",
           gear: 1,
-          overtake: true,
         },
         {
           num: 2,
@@ -1485,7 +1459,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Chicane",
           speed: "75 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 11,
@@ -1550,7 +1523,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "95 km/h",
           gear: 3,
-          overtake: true,
         },
         {
           num: 2,
@@ -1614,7 +1586,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "78 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 11,
@@ -1686,7 +1657,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "80 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 2,
@@ -1701,7 +1671,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "95 km/h",
           gear: 3,
-          overtake: true,
         },
         {
           num: 4,
@@ -1788,7 +1757,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "105 km/h",
           gear: 3,
-          overtake: true,
         },
         {
           num: 4,
@@ -1810,7 +1778,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "92 km/h",
           gear: 3,
-          overtake: true,
         },
         {
           num: 7,
@@ -1867,7 +1834,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "125 km/h",
           gear: 4,
-          overtake: true,
         },
         {
           num: 15,
@@ -1911,7 +1877,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Hairpin",
           speed: "65 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 2,
@@ -1933,7 +1898,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "95 km/h",
           gear: 3,
-          overtake: true,
         },
         {
           num: 5,
@@ -1971,7 +1935,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "75 km/h",
           gear: 2,
-          overtake: true,
         },
       ],
     },
@@ -1998,7 +1961,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "75 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 2,
@@ -2116,7 +2078,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "85 km/h",
           gear: 3,
-          overtake: true,
         },
         {
           num: 2,
@@ -2237,7 +2198,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "75 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 2,
@@ -2259,7 +2219,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "85 km/h",
           gear: 3,
-          overtake: true,
         },
         {
           num: 5,
@@ -2344,7 +2303,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "85 km/h",
           gear: 3,
-          overtake: true,
         },
         {
           num: 2,
@@ -2443,7 +2401,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "95 km/h",
           gear: 3,
-          overtake: true,
         },
         {
           num: 16,
@@ -2505,7 +2462,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "80 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 5,
@@ -2605,7 +2561,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Uphill Heavy Braking",
           speed: "85 km/h",
           gear: 3,
-          overtake: true,
         },
         {
           num: 2,
@@ -2676,7 +2631,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "65 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 12,
@@ -2769,7 +2723,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "80 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 2,
@@ -2805,7 +2758,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Hairpin",
           speed: "60 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 7,
@@ -2912,7 +2864,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "95 km/h",
           gear: 3,
-          overtake: true,
         },
         {
           num: 2,
@@ -2990,7 +2941,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "75 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 13,
@@ -3034,7 +2984,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "85 km/h",
           gear: 3,
-          overtake: true,
         },
         {
           num: 2,
@@ -3098,7 +3047,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Hairpin",
           speed: "55 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 11,
@@ -3127,7 +3075,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Medium Right",
           speed: "135 km/h",
           gear: 4,
-          overtake: true,
         },
         {
           num: 15,
@@ -3175,7 +3122,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "85 km/h",
           gear: 3,
-          overtake: true,
         },
         {
           num: 2,
@@ -3239,7 +3185,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "65 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 11,
@@ -3311,7 +3256,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "90 km/h",
           gear: 3,
-          overtake: true,
         },
         {
           num: 2,
@@ -3340,7 +3284,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Hairpin",
           speed: "62 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 6,
@@ -3369,7 +3312,6 @@ document.addEventListener("DOMContentLoaded", () => {
           type: "Heavy Braking",
           speed: "78 km/h",
           gear: 2,
-          overtake: true,
         },
         {
           num: 10,
