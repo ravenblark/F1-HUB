@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Track Time (Montreal)
     const trackTime = new Date(
-      new Date().toLocaleString("en-US", { timeZone: "America/Toronto" }),
+      new Date().toLocaleString("en-US", { timeZone: "Europe/Monaco" }),
     );
     document.getElementById("track-clock").innerText =
       trackTime.toLocaleTimeString([], {

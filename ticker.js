@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
       date: "22 - 24 MAY",
       startDate: "2026-05-22",
       endDate: "2026-05-24",
-      timezone: "America/Toronto",
+      timeZone: "Europe/Monaco",
     },
     {
       round: 6,

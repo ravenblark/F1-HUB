@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { hour: "2-digit", minute: "2-digit", hour12: false },
     );
     const trackTime = new Date(
-      now.toLocaleString("en-US", { timeZone: "America/Toronto" }),
+      now.toLocaleString("en-US", { timeZone: "Europe/Monaco" }),
     );
     document.getElementById("track-clock").innerText =
       trackTime.toLocaleTimeString([], {
@@ -1265,8 +1265,7 @@ document.addEventListener("DOMContentLoaded", () => {
       laps: 70,
       firstGP: 1978,
       lapRecord: "1:13.078 (Bottas, 2019)",
-      trackSvg:
-        "https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000001/common/f1/2026/track/2026trackmontrealdetailed.webp?v=2026",
+      trackSvg: tb + "montrealdetailed.webp",
       sectors: [
         { name: "S1", color: "#e10600" },
         { name: "S2", color: "#ffd700" },

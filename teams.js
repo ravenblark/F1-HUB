@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (trackEl) {
       //
       const track = new Date(
-        now.toLocaleString("en-US", { timeZone: "America/Toronto" }),
+        now.toLocaleString("en-US", { timeZone: "Europe/Monaco" }),
       );
       trackEl.textContent = track.toLocaleTimeString("en-GB", {
         hour: "2-digit",
