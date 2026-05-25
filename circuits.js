@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
       firstGP: 1978,
       pitLoss: "~21s",
       track: sb + "montreal-2.svg",
-      status: "next",
+      status: "completed",
       corners: [
         "T1-2 Senna Esses",
         "T3 Island Hairpin",
@@ -175,6 +175,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "T8-9 L'\u00c9pingle (Hairpin)",
         "T10 Backstraight Kink",
         "T13 Wall of Champions",
+      ],
+      results: [
+        { pos: "1st", d: "Antonelli", c: "ANT", t: "1:28:15.758" },
+        { pos: "2nd", d: "Hamilton", c: "HAM", t: "+10.768s" },
+        { pos: "3rd", d: "Verstappen", c: "VER", t: "+11.276s" },
       ],
     },
     {
@@ -191,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
       firstGP: 1950,
       pitLoss: "~24s",
       track: sb + "monaco-3.svg",
-      status: "upcoming",
+      status: "next",
       corners: [
         "T1 Sainte D\u00e9vote",
         "T3 Beau Rivage Hill",
