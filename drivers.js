@@ -8,29 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
       menu.classList.toggle("is-active");
     });
   }
-  // Clocks
-  function updateClocks() {
-    const now = new Date();
-    document.getElementById("local-clock").innerText = now.toLocaleTimeString(
-      [],
-      {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: false,
-      },
-    );
-    const trackTime = new Date(
-      new Date().toLocaleString("en-US", { timeZone: "Europe/Monaco" }),
-    );
-    document.getElementById("track-clock").innerText =
-      trackTime.toLocaleTimeString([], {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: false,
-      });
-  }
-  setInterval(updateClocks, 1000);
-  updateClocks();
 
   // Driver card expand/collapse
   const cards = document.querySelectorAll(".driver-card");

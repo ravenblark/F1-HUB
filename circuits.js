@@ -9,26 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ========== CLOCKS ==========
-  function updateClocks() {
-    const now = new Date();
-    document.getElementById("local-clock").innerText = now.toLocaleTimeString(
-      [],
-      { hour: "2-digit", minute: "2-digit", hour12: false },
-    );
-    const trackTime = new Date(
-      now.toLocaleString("en-US", { timeZone: "Europe/Monaco" }),
-    );
-    document.getElementById("track-clock").innerText =
-      trackTime.toLocaleTimeString([], {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: false,
-      });
-  }
-  setInterval(updateClocks, 1000);
-  updateClocks();
-
   // ========== RACE CALENDAR ==========
   const sb =
     "https://cdn.jsdelivr.net/gh/julesr0y/f1-circuits-svg@main/circuits/minimal/white-outline/";

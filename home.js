@@ -13,34 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     track.scrollBy({ left: -400, behavior: "smooth" });
   });
 
-  function updateClocks() {
-    // Local Time
-    const now = new Date();
-    document.getElementById("local-clock").innerText = now.toLocaleTimeString(
-      [],
-      {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: false,
-      },
-    );
-
-    // Track Time (Montreal)
-    const trackTime = new Date(
-      new Date().toLocaleString("en-US", { timeZone: "Europe/Monaco" }),
-    );
-    document.getElementById("track-clock").innerText =
-      trackTime.toLocaleTimeString([], {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: false,
-      });
-  }
-
-  // Update every second
-  setInterval(updateClocks, 1000);
-  updateClocks();
-
   // hamburger menu toggle
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");

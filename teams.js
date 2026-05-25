@@ -3,24 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const now = new Date();
     const localEl = document.getElementById("local-clock");
     const trackEl = document.getElementById("track-clock");
-
-    if (localEl) {
-      localEl.textContent = now.toLocaleTimeString("en-GB", {
-        hour: "2-digit",
-        minute: "2-digit",
-      });
-    }
-
-    if (trackEl) {
-      //
-      const track = new Date(
-        now.toLocaleString("en-US", { timeZone: "Europe/Monaco" }),
-      );
-      trackEl.textContent = track.toLocaleTimeString("en-GB", {
-        hour: "2-digit",
-        minute: "2-digit",
-      });
-    }
   }
 
   // Run clock immediately and then every second
