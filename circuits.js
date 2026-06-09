@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
       firstGP: 1950,
       pitLoss: "~24s",
       track: sb + "monaco-3.svg",
-      status: "next",
+      status: "completed",
       corners: [
         "T1 Sainte D\u00e9vote",
         "T3 Beau Rivage Hill",
@@ -188,6 +188,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "T12-13 Swimming Pool",
         "T17 Rascasse",
         "T18 Anthony Nogh\u00e8s",
+      ],
+      results: [
+        { pos: "1st", d: "Antonelli", c: "ANT", t: "2:23:31.243" },
+        { pos: "2nd", d: "Hamilton", c: "HAM", t: "	+6.271s" },
+        { pos: "3rd", d: "Hadjar", c: "HAD", t: "+23.394s" },
       ],
     },
     {
@@ -204,7 +209,7 @@ document.addEventListener("DOMContentLoaded", () => {
       firstGP: 1991,
       pitLoss: "~22s",
       track: sb + "catalunya-6.svg",
-      status: "upcoming",
+      status: "next",
       corners: [
         "T1 Elf",
         "T2 Renault",
